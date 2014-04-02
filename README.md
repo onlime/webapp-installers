@@ -4,7 +4,7 @@ Simple PHP helper scripts to install common webapps without shell access
 
 ## Scripts
 
-- install-typo3.php: Typo3 6.2.x installer script
+- **```install-typo3.php```**: Typo3 6.2.x installer script
 
 ## Usage
 
@@ -28,7 +28,7 @@ You may also override the default version via GET parameter:
 
 http://www.example.com/install-typo3.php?version=6.2.1
 
-The Typo3 source package will be unpacked and all necessary symlinks will be created unter ```public/````:
+The Typo3 source package will be unpacked and all necessary symlinks will be created unter ```public/```:
 
 ```
 [INFO] decompressed ../typo3_src-6.2.0.tar.gz to ../typo3_src-6.2.0
