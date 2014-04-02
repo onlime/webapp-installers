@@ -17,7 +17,6 @@ public_html/www/
 ├── public
 │   └── install-typo3.php
 └── typo3_src-6.2.0.tar.gz
-
 ```
 
 Set your webroot to the ```public/``` directory and call the installer via browser, e.g.:
