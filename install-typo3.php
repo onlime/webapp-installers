@@ -96,9 +96,11 @@ class Typo3Installer
 
         // create .htaccess
         copy('typo3_src/_.htaccess', '.htaccess');
+        $this->_msg("copied typo3_src/_.htaccess to .htaccess");
 
         // create FIRST_INSTALL
         touch('FIRST_INSTALL');
+        $this->_msg("created FIRST_INSTALL");
 
         $this->_msg("done. Sucessfully installed Typo3 $this->_version.");
     }
