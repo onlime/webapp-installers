@@ -16,7 +16,7 @@ Simply upload both the installer script ```install-typo3.php``` and the Typo3 ``
 public_html/www/
 ├── public
 │   └── install-typo3.php
-└── typo3_src-6.2.0.tar.gz
+└── typo3_src-6.2.3.tar.gz
 ```
 
 Set your webroot to the ```public/``` directory and call the installer via browser, e.g.:
@@ -30,27 +30,27 @@ http://www.example.com/install-typo3.php?version=6.2.1
 The Typo3 source package will be unpacked and all necessary symlinks will be created unter ```public/```:
 
 ```
-[INFO] decompressed ../typo3_src-6.2.0.tar.gz to ../typo3_src-6.2.0
-[INFO] created symlink typo3_src -> ../typo3_src-6.2.0
+[INFO] decompressed ../typo3_src-6.2.3.tar.gz to ../typo3_src-6.2.3
+[INFO] created symlink typo3_src -> ../typo3_src-6.2.3
 [INFO] created symlink index.php -> typo3_src/index.php
 [INFO] created symlink typo3 -> typo3_src/typo3
 [INFO] copied typo3_src/_.htaccess to .htaccess
 [INFO] created FIRST_INSTALL
-[INFO] done. Sucessfully installed Typo3 6.2.0.
+[INFO] done. Sucessfully installed Typo3 6.2.3.
 ```
 
 If you run the installer over an already existing Typo3 installation (e.g. to upgrade to a newer version), this is perfectly fine. You will get output like this:
 
 ```
 [NOTICE] unlinked existing symlink typo3_src
-[INFO] created symlink typo3_src -> ../typo3_src-6.2.0
+[INFO] created symlink typo3_src -> ../typo3_src-6.2.3
 [NOTICE] unlinked existing symlink index.php
 [INFO] created symlink index.php -> typo3_src/index.php
 [NOTICE] unlinked existing symlink typo3
 [INFO] created symlink typo3 -> typo3_src/typo3
 [INFO] copied typo3_src/_.htaccess to .htaccess
 [INFO] created FIRST_INSTALL
-[INFO] done. Sucessfully installed Typo3 6.2.0.
+[INFO] done. Sucessfully installed Typo3 6.2.3.
 ```
 
 After a successful installation, your directory structure will look as follows:
@@ -63,8 +63,8 @@ public_html/www/
 │   ├── index.php -> typo3_src/index.php
 │   ├── install-typo3.php
 │   ├── typo3 -> typo3_src/typo3
-│   └── typo3_src -> ../typo3_src-6.2.0
-├── typo3_src-6.2.0
+│   └── typo3_src -> ../typo3_src-6.2.3
+├── typo3_src-6.2.3
 │   ├── ChangeLog
 │   ├── composer.json
 │   ├── GPL.txt
@@ -75,7 +75,7 @@ public_html/www/
 │   ├── NEWS.md
 │   ├── README.md
 │   └── typo3
-└── typo3_src-6.2.0.tar.gz
+└── typo3_src-6.2.3.tar.gz
 ```
 
 You can now run the Typo3 setup directly via your URL, e.g. http://www.example.com/

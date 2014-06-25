@@ -29,7 +29,7 @@ class Typo3Installer
      *
      * @param string $version
      */
-    public function __construct($version = '6.2.0')
+    public function __construct($version = '6.2.3')
     {
         $this->_currPath = realpath(dirname(__FILE__));
         $this->_version  = (isset($_GET['version'])) ? $_GET['version'] : $version;
