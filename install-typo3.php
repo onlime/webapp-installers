@@ -1,9 +1,9 @@
 <?php
 /**
- * Typo3 6.2.x installer for webhosting customers without shell access
+ * Typo3 6.2+ installer for webhosting customers without shell access
  * by Philip Iezzi
  *
- * @copyright Copyright (c) 2014 Onlime Webhosting (http://www.onlime.ch)
+ * @copyright Copyright (c) 2015 Onlime Webhosting (http://www.onlime.ch)
  */
 class Typo3Installer
 {
@@ -29,7 +29,7 @@ class Typo3Installer
      *
      * @param string $version
      */
-    public function __construct($version = '6.2.3')
+    public function __construct($version = '6.2.15')
     {
         $this->_currPath = realpath(dirname(__FILE__));
         $this->_version  = (isset($_GET['version'])) ? $_GET['version'] : $version;
